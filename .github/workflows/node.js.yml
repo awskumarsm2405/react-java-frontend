@@ -62,4 +62,4 @@ jobs:
           
       - name: Deploy to AWS CodeDeploy
         run: |
-          aws s3 cp . s3://skmstaticwebpage/
+          aws s3 cp ./ s3://skmstaticwebpage/ --recursive
